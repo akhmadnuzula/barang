@@ -57,9 +57,9 @@ class BarangController extends Controller
             }
 
             if($harga >= 40000 ){
-                $diskon = 10;
+                $diskon = ($harga * 10) / 100;
             }else if($harga >= 20000 && $harga < 40000){
-                $diskon = 5;
+                $diskon = ($harga * 5) / 100;
             }else{
                 $diskon = 0;
             }
@@ -123,10 +123,10 @@ class BarangController extends Controller
                 }
             }
 
-            if($harga > 40000 ){
-                $diskon = 10;
-            }else if($harga > 20000 && $harga <= 40000){
-                $diskon = 5;
+            if($harga >= 40000 ){
+                $diskon = ($harga * 10) / 100;
+            }else if($harga >= 20000 && $harga < 40000){
+                $diskon = ($harga * 5) / 100;
             }else{
                 $diskon = 0;
             }
