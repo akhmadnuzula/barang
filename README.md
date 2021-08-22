@@ -10,3 +10,5 @@ Product List easily
 4. The default register role is "admin"
 4. In the dashboard page, your role is "superadmin", you can add, change, delete products
 5. If your role is "admin", you cannot add, modify, delete products
+6. login superadmin : username admin password admin
+7. login admin : username user password user12345
